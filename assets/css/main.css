@@ -597,6 +597,79 @@ body {
     color: #fff;
 }
 
+.header__cart-wrap {
+    position: relative;
+    display: inline-block;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.header__cart-wrap:hover .header__cart-list {
+    display: block;
+}
+
+.header__cart-list {
+    width: 400px;
+    background-color: #fff;
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    display: none;
+    border-radius: 2px;
+    cursor: default;
+    animation: fadeIn ease-in 0.2s;
+}
+
+.header__cart-list::after {
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    top: -24px;
+    right: 0px;
+    border-width: 15px 21px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+.header__cart-no-cart {
+    padding: 20px 8px;
+    text-align: center;
+}
+
+.header__cart-no-cart .header__cart-list-img,
+.header__cart-no-cart .header__cart-list-msg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__cart-list-img {
+    width: 60%;
+    display: none;
+}
+
+.header__cart-list-msg {
+    font-size: 14px;
+    margin-top: 12px;
+    color: rgb(121 , 121, 121);
+    display: none;
+}
+
+.header__cart-notice {
+    position: absolute;
+    padding: 1px 6px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 13px;
+    color: #ee4d2d;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #ec4929;
+    top: -5px;
+    right: -4px;
+}
+
 /* Animation */
 @keyframes fadeIn {
           from {

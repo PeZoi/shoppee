@@ -175,7 +175,21 @@
                     </div>
 
                     <div class="header__cart">
-                        <i class="header__cart-icon fa fa-shopping-cart" aria-hidden="true"></i>
+                        <div class="header__cart-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="header__cart-icon bi bi-cart"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                            </svg>
+                            <!-- <i class="header__cart-icon fa fa-shopping-cart" aria-hidden="true"></i> -->
+                            <span class="header__cart-notice">3</span>
+
+                            <!-- When products not in cart, add class:  header__cart-no-cart-->
+                            <div class="header__cart-list ">
+                                <img src="./assets/img/No_cart.png" alt="" class="header__cart-list-img">
+                                <span class="header__cart-list-msg">Chưa có sản phẩm</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
