@@ -91,7 +91,7 @@ body {
           left: 0;
           top: 170%;
           padding: 8px 8px;
-          border-radius: 3px;
+          border-radius: 2px;
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
           display: none;
           animation: fadeIn ease-in 0.3s;
@@ -322,7 +322,7 @@ body {
     font-size: 14px;
     padding-left: 12px;
     border: 1px solid #d3d3d3;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 .auth-form__policy {
@@ -424,17 +424,70 @@ body {
     flex: 1;
     display: flex;
     align-items: center;
-    border-radius: 3px;
+    border-radius: 2px;
+}
+
+/* Search history */
+.header__search-input-wrap {
+    flex: 1;
+    position: relative;
+}
+
+.header__search-history {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: calc(100% - 16px);
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 1px 5px rgb(199, 199, 199);
+    display: none;
+}
+
+.header__search-history-heading {
+    margin: 8px 12px;
+    font-size: 14px;
+    color: #999;
+    font-weight: 400;
+}
+
+.header__search-history-list{
+    padding-left: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.header__search-history-item {
+    list-style: none;
+    padding: 0 12px;
+    height: 38px;
+}
+
+.header__search-history-item:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.header__search-history-item a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(17, 17, 17);
+    display: block;
+    height: 100%;
+    line-height: 38px;
 }
 
 .header__search-input {
     height: 34px;
-    flex: 1;
+    width: 100%;
     margin-left: 8px;
-    font-size: 14px;
+    font-size: 16px;
     border: none;
     outline: none;
     color: #8a8a8a;
+}
+
+.header__search-input:focus ~.header__search-history {
+    display: block;
 }
 
 .header__search-select {
@@ -474,7 +527,7 @@ body {
     padding: 0;
     width: 135px;
     background-color: white;
-    border-radius: 3px;
+    border-radius: 2px;
     box-shadow: 0 1px 1px #ccc;
     display: none;
     animation: fadeIn ease-in 0.1s;
