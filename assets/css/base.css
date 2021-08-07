@@ -36,7 +36,7 @@ html {
 
 /* Button */
 .btn {
-          min-width: 142px;
+          min-width: 124px;
           height: 36px;
           font-size: 14px;
           outline: none;
@@ -48,6 +48,7 @@ html {
           display: flex;
           align-items: center;
           justify-content: center;
+          border-radius: 2px;
 }
 
 .btn.btn--size-s {
