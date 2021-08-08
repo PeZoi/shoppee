@@ -22,6 +22,105 @@ body {
           position: relative;
 }
 
+.header__navbar-list-user {
+    display: flex;
+}
+
+.header__navbar-item.header__navbar-user {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.header__navbar-item.header__navbar-user:hover .header__navbar-user-menu {
+    display: block;
+}
+
+.header__navbar-user-menu {
+    position: absolute;
+    z-index: 1;
+    top: calc(100% + 4px);
+    right: 0;
+    background-color: #fff;
+    border-radius: 2px;
+    width: 160px;
+    padding: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    animation: fadeIn ease-in 0.2s;
+}
+
+.header__navbar-user-menu::after {
+    content: "";
+    position: absolute;
+    top: -29px;
+    right: 10px;
+    border-width: 20px 27px;
+    border-style: solid;
+    border-color: transparent transparent
+    #fff transparent;
+    z-index: -1;
+}
+
+.header__navbar-user-menu::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    width: 62%;
+    height: 16px;
+}
+
+.header__navbar-user-item {
+    list-style: none;
+}
+
+.header__navbar-user-item:first-child{
+    border-radius: 2px;
+}
+
+.header__navbar-user-item:last-child{
+    border-radius: 2px;
+}
+
+.header__navbar-user-item:hover {
+    background-color: rgb(243, 242, 242);
+}
+
+.header__navbar-user-item-out {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.header__navbar-user-item-out:hover a {
+    background-color: rgb(243, 242, 242);
+    color: #fa220f;
+}
+
+.header__navbar-user-item a {
+    text-decoration: none;
+    color: rgb(65, 74, 83);
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: block;
+    padding: 14px 12px;
+}
+
+.header__navbar-user-img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header__navbar-user-name {
+    margin-left: 8px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
 .header__navbar-item:hover,
 .header__navbar-item-link:hover {
           color: rgba(255, 255, 255, 0.7);
@@ -71,6 +170,10 @@ body {
 .header__navbar-item-icon {
           text-decoration: none;
           color: white;
+}
+
+.header__navbar-item-icon:nth-child(1) {
+    margin-left: 3px;
 }
 
 .header__navbar-item-icon:hover {
@@ -130,14 +233,16 @@ body {
           width: 404px;
           right: 0;
           top: 170%;
-          border: 1px solid #d3d3d3;
+          border: 1px solid rgba(0, 0, 0, 0.1);
           background-color: white;
           display: none;
           animation: headerNotificationGrown ease-in 0.2s;
-          transform-origin: calc(100% - 20px) top;
+          transform-origin: calc(100% - 32px) top;
           will-change: opacity, transform;
           cursor: default;
           z-index: 1;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          border-radius: 2px;
 }
 
 .header__notify::before {
@@ -418,6 +523,11 @@ body {
 
 }
 
+.header__logo-link {
+    background-color: transparent;
+    text-decoration: none;
+}
+
 .header__search {
     background-color: #fff;
     height: 40px;
@@ -523,7 +633,7 @@ body {
 .header__search-option {
     position: absolute;
     right: 0;
-    top: 100%;
+    top: calc(100% + -6px);
     padding: 0;
     width: 135px;
     background-color: white;
@@ -612,7 +722,7 @@ body {
     width: 400px;
     background-color: #fff;
     position: absolute;
-    top: calc(100% + 6px);
+    top: calc(100% + 5px);
     right: 2px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     display: none;

@@ -36,16 +36,19 @@
                         </li>
                         <li class="header__navbar-item header__navbar-item-default">
                             Kết nối
-                            <a href="" class="header__navbar-item-icon"><i class="header__navbar-icon fa fa-facebook-square" aria-hidden="true"></i>
-
+                            <a href="" class="header__navbar-item-icon">
+                                <i class="header__navbar-icon fa fa-facebook-square" aria-hidden="true"></i>
                             </a>
-                            <a href="" class="header__navbar-item-icon"><i class="header__navbar-icon fa fa-instagram" aria-hidden="true"></i>
+                            <a href="" class="header__navbar-item-icon">
+                                <i class="header__navbar-icon fa fa-instagram" aria-hidden="true"></i>
                             </a>
                         </li>
                     </ul>
-                    <ul class="header__navbar-list">
+                    <ul class="header__navbar-list header__navbar-list-user">
                         <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link"><i class="header__navbar-icon fa fa-bell" aria-hidden="true"></i>Thông Báo
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa fa-bell-o" aria-hidden="true"></i>
+                                Thông Báo
                                 <div class="header__notify">
                                     <header class="header__notify-header"><h3>Thông Báo Mới</h3></header>
                                         <ul class="header__notify-list">
@@ -111,16 +114,37 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link"><i class="header__navbar-icon fa fa-question-circle" aria-hidden="true"></i>Trợ Giúp</a>
+                        <li class="header__navbar-item header__navbar-item-help">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa fa-question-circle" aria-hidden="true"></i>
+                                Trợ Giúp
+                            </a>
                         </li>
-                        <li class="header__navbar-item header__navbar-item-bold navbar__item-separate">Đăng Ký</li>
-                        <li class="header__navbar-item header__navbar-item-bold">Đăng Nhập</li>
+                        <!-- <li class="header__navbar-item header__navbar-item-bold navbar__item-separate">Đăng Ký</li>
+                        <li class="header__navbar-item header__navbar-item-bold">Đăng Nhập</li> -->
+
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="https://cf.shopee.vn/file/7ea2355e8f9c404e7e07321db38c1a06_tn" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Viễn Đông</span>
+
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="#">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="#">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item-out">
+                                    <a href="#">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
 
                 <div class="header-with-search">
                     <div class="header__logo">
+                        <a href="" class="header__logo-link">
                         <svg viewBox="0 0 192 65" class="header__logo-img">
                             <g fill-rule="evenodd">
                                 <path fill="#fff"
@@ -128,6 +152,7 @@
                                 </path>
                             </g>
                         </svg>
+                        </a>
                     </div>
 
                     <div class="header__search">
