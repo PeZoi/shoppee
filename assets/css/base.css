@@ -32,6 +32,21 @@ html {
 .grid__row {
           display: flex;
           flex-wrap: wrap;
+          margin-left: -12px;
+          margin-right: -12px;
+}
+
+/* Test */
+.grid__column-2 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 16.6667%;
+}
+
+.grid__column-10 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 83.3334%;
 }
 
 /* Button */
@@ -45,7 +60,7 @@ html {
           text-decoration: none;
           cursor: pointer;
           background-color: white;
-          display: flex;
+          display: inline-flex;
           align-items: center;
           justify-content: center;
           border-radius: 2px;
@@ -74,4 +89,33 @@ html {
 
 }
 
+/* Animation */
+@keyframes fadeIn {
+          from {
+                    opacity: 0;
+          }
+          to {
+                    opacity: 1;
+          }
+}
+
+@keyframes growth {
+          from {
+                    transform: scale(--growth-from);
+          }
+          to {
+                    transform: scale(--growth-to);
+          }
+}
+
+@keyframes headerNotificationGrown {
+          from {
+                    opacity: 0;
+                    transform: scale(0);
+          }
+          to {
+                    opacity: 1;
+                    transform: scale(1);
+          }
+}
 
