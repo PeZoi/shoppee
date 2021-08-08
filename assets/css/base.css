@@ -89,6 +89,73 @@ html {
 
 }
 
+/* Selection */
+.select-input {
+  height: 34px;
+  min-width: 200px;
+  padding: 0 12px;
+  border-radius: 2px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.select-input:hover .select-input__list {
+  display: block;
+}
+
+.select-input__label {
+  font-size: 1.4rem;
+}
+
+.select-input__icon {
+  font-size: 1.4rem;
+  color: rgb(131, 131, 131);
+  position: relative;
+  top: -1px;
+}
+
+.select-input__list {
+  padding: 10px 12px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 26px;
+  border-radius: 2px;
+  background-color: #fff;
+  display: none;
+}
+
+.select-input__list::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  height: 12px;
+}
+
+.select-input__item {
+  list-style: none;
+}
+
+.select-input__link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: block;
+  padding: 10px 0;
+  color: #353535;
+}
+
+.select-input__link:hover {
+  color: #f53625;
+}
+
+
+
 /* Animation */
 @keyframes fadeIn {
           from {
