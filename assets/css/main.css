@@ -1013,3 +1013,120 @@ body {
 .home-filter__page-icon {
     margin: auto;
 }
+
+/* Product */
+.home-product-item{
+    background-color: #fff;
+    margin-top: 10px;
+}
+.home-product-item-img{
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home-product-item__name{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #353535;
+    line-height: 1.8rem;
+    height: 3.6rem;
+    margin: 10px 10px 6px;
+    font-size: 12px;
+    font-weight: 500;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+.home-product-item__price{
+    display: flex;
+    margin-left: 10px;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin: 32px 0 12px 10px;
+}
+.home-product-item__price-old{
+    font-size: 1.4rem;
+    color: #666;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+.home-product-item__price-current{
+    font-size: 1.6rem;
+    color: #f53625;
+    font-weight: 500;
+}
+.home-product-item__action{
+    display: flex;
+    margin: 6px 10px 6px;
+    justify-content: space-between;
+}
+.home-product-item__like{
+    font-size: 1.2rem;
+}
+
+.home-product-item__like--liked {
+
+}
+
+.home-product-item__like-empty{
+
+}
+
+.home-product-item__like-fill {
+    display: none;
+    color: #f53625;
+}
+
+.home-product-item__like--liked .home-product-item__like-fill {
+    display: inline-block;
+}
+
+.home-product-item__like--liked .home-product-item__like-empty {
+    display: none;
+}
+
+.home-product-item__rating{
+    font-size: 1rem;
+    color: #d5d5d5;
+    margin-left: auto;
+}
+
+.home-product-item__rating {
+    color: #ffce3e;
+}
+
+.home-product-item__sold {
+    font-size: 1.2rem;
+    color: #000;
+    margin-left: 5px;
+}
+
+.home-product-item__origin{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: #595959;
+    font-size: 1.2rem;
+}
+.home-product-item__brand{
+
+}
+.home-product-item__origin-name{
+
+}
+.home-product-item__favorite{
+
+}
+.home-product-item__sale-off{
+
+}
+.home-product-item__sale-off-percent{
+
+}
+.home-product-item__sale-off-label{
+
+}
