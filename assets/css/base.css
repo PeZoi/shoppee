@@ -133,6 +133,7 @@ html {
   border-radius: 2px;
   background-color: #fff;
   display: none;
+  z-index: 1;
 }
 
 .select-input__list::after {
@@ -160,7 +161,37 @@ html {
   color: #f53625;
 }
 
+/* pagination */
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination-item{
+  list-style: none;
+  margin: 0 15px;
+}
 
+.pagination-item--active .pagination-item__link {
+  background-color: #ee4d2d;
+  color: #fff;
+}
+
+.pagination-item--active .pagination-item__link:hover {
+  opacity: 0.9;
+}
+
+.pagination-item__link{
+  display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #939393;
+  min-width: 40px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 2px;
+}
 
 /* Animation */
 @keyframes fadeIn {
