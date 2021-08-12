@@ -849,10 +849,14 @@ body {
     margin: 0;
     font-size: 14px;
     font-weight: 500;
-    width: 195px;
-    text-overflow: ellipsis;
-    overflow: hidden;
+    line-height: 22px;
+    width: 190px;
     white-space: nowrap;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
     text-align: left;
 }
 
