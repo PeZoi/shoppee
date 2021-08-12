@@ -147,7 +147,7 @@
   }
   .header__search {
     position: fixed;
-    top: var(--header-height);
+    top: calc(var(--header-height) + 6px);
     width: 100%;
     left: 0;
     padding: 0 8px;
