@@ -89,6 +89,16 @@
   .mobile-tablet-border-bottom {
     border-bottom: 2px solid #f53625;
   }
+
+  .header__mobile-search {
+    display: inline-block;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .show-cart-list:checked ~ .header__cart-list {
+    display: block;
+  }
+
 }
 
 /* Tablet: width >= 740px and width < 1024px */
@@ -230,4 +240,7 @@
   .mobile-category{
     display: none;
   }
+  .header__cart-wrap:hover .header__cart-list {
+    display: block;
+}
 }

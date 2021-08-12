@@ -364,6 +364,7 @@ body {
 
 .header__tablet-search {
     display: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* Modal Login */
@@ -526,10 +527,6 @@ body {
     display: flex;
     align-items: center;
     padding-left: 8px;
-}
-
-.header__mobile-search {
-
 }
 
 .header__mobile-search-icon {
@@ -737,10 +734,6 @@ body {
     display: inline-block;
     padding: 0 12px;
     cursor: pointer;
-}
-
-.header__cart-wrap:hover .header__cart-list {
-    display: block;
 }
 
 .header__cart-list {

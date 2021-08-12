@@ -239,7 +239,7 @@
                     </div>
 
                     <div class="header__cart">
-                        <div class="header__cart-wrap">
+                        <label for="cart-list" class="header__cart-wrap">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="header__cart-icon bi bi-cart"
                                 viewBox="0 0 16 16">
                                 <path
@@ -249,6 +249,7 @@
                             <span class="header__cart-notice">3</span>
 
                             <!-- When products not in cart, add class:  header__cart-no-cart-->
+                            <input type="checkbox" hidden id="cart-list" class="show-cart-list">
                             <div class="header__cart-list ">
                                 <img src="./assets/img/No_cart.png" alt="" class="header__cart-list-img">
                                 <span class="header__cart-list-msg">Chưa có sản phẩm</span>
@@ -317,7 +318,7 @@
                                 </ul>
                                 <a href="" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
                             </div>
-                        </div>
+                        </label>
                     </div>
                 </div>
             </div>
