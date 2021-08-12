@@ -6,6 +6,7 @@
           --header-height: 120px;
           --navbar-height: 28px;
           --header-with-search: calc(var(--header-height) - var(--navbar-height));
+          --header__sort-bar-height: 46px;
 }
 
 * {
@@ -17,16 +18,6 @@ html {
           line-height: 1.6rem;
           font-family: 'Roboto', sans-serif;
           box-sizing: border-box;
-}
-
-.grid {
-          width: 1200px;
-          max-width: 100%;
-          margin: 0 auto;
-}
-
-.grid__full-width {
-          width: 100%;
 }
 
 .grid__row {
@@ -182,14 +173,15 @@ html {
 }
 
 .pagination-item__link{
+  --height: 30px;
   display: block;
   text-decoration: none;
   font-size: 2rem;
   color: #939393;
   min-width: 40px;
-  height: 30px;
+  height: var(--height);
+  line-height: var(--height);
   text-align: center;
-  line-height: 30px;
   border-radius: 2px;
 }
 
@@ -221,5 +213,27 @@ html {
                     opacity: 1;
                     transform: scale(1);
           }
+}
+
+@keyframes topToBottomSearch {
+  from {
+    opacity: 0;
+    transform: translateY(calc(var(--navbar-height) - 50%));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(var(--navbar-height));
+  }
+}
+
+@keyframes leftToRightMenu {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
